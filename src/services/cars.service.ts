@@ -1,6 +1,5 @@
 import CarRepository from "../repository/car.repository";
-import { Car } from "../models/car.model";
-import carRepository from "../repository/car.repository";
+import { ICar } from "../models/car.model";
 
 class CarsService {
 
@@ -12,7 +11,7 @@ class CarsService {
         return CarRepository.getById(_id);
     }
 
-    create(car: typeof Car) {
+    create(car: ICar) {
         return CarRepository.create(car);
     }
 
@@ -20,7 +19,7 @@ class CarsService {
         return CarRepository.remove(_id);
     }
 
-    update(_id: string, car: Partial<typeof Car>) {
+    update(_id: string, car: Partial<ICar>) {
         return CarRepository.update(_id, car); 
     }
 }

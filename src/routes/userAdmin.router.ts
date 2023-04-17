@@ -18,10 +18,13 @@ router.get('/:document', authorizationMiddleware, async (req: Request, res: Resp
 });
 
 //Cria um novo registro - create
-router.post('/', authorizationMiddleware, async (req: Request, res: Response) => {
+router.post('/', authorizationMiddleware ,async (req: Request, res: Response) => {
     if (req.body.age < 18) {
         return res.status(400).send({ message: 'Administrador não foi criado pois não tem a idade mínima(18 anos).'});
     }
+/*  if(req.body.name === undefined){
+        return res.status(400).send({ message: "Informe o nome corretamente." });
+    } */
     await userAdminService.create(req.body);
     res.status(201).send({message: 'Administrador criado com sucesso!'});
 });

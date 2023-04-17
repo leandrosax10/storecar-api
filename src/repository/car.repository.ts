@@ -1,4 +1,4 @@
-import { Car } from "../models/car.model";
+import { ICar ,Car } from "../models/car.model";
 
 class CarRepository {
     getAll() {
@@ -9,11 +9,11 @@ class CarRepository {
         return Car.findOne({ id: _id});
     }
 
-    create(car: typeof Car) {
+    create(car: ICar) {
         return Car.create(car);
     }
 
-    update(_id: string, car: Partial<typeof Car>) {
+    update(_id: string, car: Partial<ICar>) {
         return Car.updateOne({ id: _id }, { $set: car });
     }
 

@@ -1,8 +1,9 @@
 import userAdminRepository from "../repository/userAdmin.repository";
-import { IUserAdmin, UserAdmin } from "../models/userAdmin.model";
+import { IUserAdmin } from "../models/userAdmin.model";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+
 
 dotenv.config();
 
@@ -30,7 +31,7 @@ class UserAdminService {
         if(!userAdmin) throw new Error("Administrador não encontrado!");
 
         const result = await bcrypt.compare(password, userAdmin.password);
-        //Chave que expira em 1 hora
+        //Chave expira em 1 hora
         if(result) {
             return jwt.sign({ document: userAdmin.document, _id: userAdmin._id}, secretJWT, {
                 expiresIn: "1h"

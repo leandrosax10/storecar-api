@@ -1,7 +1,24 @@
 import { Schema } from "mongoose";
 import mongoose from "mongoose";
 
-export const carSchema = new Schema({
+export interface ICar {
+    name: string;
+    make: string;
+    exchange: string;
+    color: string;
+    description: string;
+    km: number;
+    img: string;
+    price: number;
+    quantity: number;
+    year: number;
+    sold: boolean;
+    phonecontact: string;
+    createdAt: Date;
+    updateAt: Date;
+}
+
+export const carSchema = new Schema<ICar>({
     name: {
         type: String,
     },
@@ -48,4 +65,4 @@ export const carSchema = new Schema({
     }
 });
 
-export const Car = mongoose.model('Car', carSchema);
+export const Car = mongoose.model<ICar>('Car', carSchema);
