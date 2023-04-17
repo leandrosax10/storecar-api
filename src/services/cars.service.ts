@@ -9,7 +9,7 @@ class CarsService {
     }
 
     getById(_id: string) {
-        return carRepository.getById(_id);
+        return CarRepository.getById(_id);
     }
 
     create(car: typeof Car) {

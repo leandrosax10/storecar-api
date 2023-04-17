@@ -1,2 +1,7 @@
 node_modules
 .env
+models/user.model.ts
+repository/user.repository.ts
+routes/user.router.ts
+services/user.service.ts
+
