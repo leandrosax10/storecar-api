@@ -5,13 +5,17 @@
  
  ## Tecnologias utilizadas
  
-* [VISUAL STUDIO CODE - IDE](#VS_CODE)
-* [INSOMNIA](#insomnia)
+* [Visual Studio Code - IDE](#VS_CODE)
+* [Insomnia](#insomnia)
 * [Node](#Node)
 * [Typescript](#Typescript)
 * [Express](#express)
 * [Mongo DB](#MongoDB)
+
+## Bibliotecas utilizadas
+
 * [Yup](#yup)
+* [Json Web Token](#jsonwebtoken)
  
  ## Inicialização:
  
