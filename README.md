@@ -6,10 +6,12 @@
  ## Tecnologias utilizadas
  
 * [VISUAL STUDIO CODE - IDE](#VS_CODE)
+* [INSOMNIA](#insomnia)
 * [Node](#Node)
 * [Typescript](#Typescript)
 * [Express](#express)
 * [Mongo DB](#MongoDB)
+* [Yup](#yup)
  
  ## Inicialização:
  
