@@ -5,4 +5,4 @@
  
  ## Inicialização:
  
- Para executar o projeto é necessário ter instalado o Node.js(versão 18)(https://nodejs.org/en/download)
+ Para executar o projeto é necessário ter instalado o [Node.js(versão 18)](https://nodejs.org/en/download)
