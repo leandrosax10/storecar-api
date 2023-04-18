@@ -14,8 +14,8 @@ export interface ICar {
     year: number;
     sold: boolean;
     phonecontact: string;
-    createdAt: Date;
-    updateAt: Date;
+    createdAt?: Date;
+    updateAt?: Date;
 }
 
 export const carSchema = new Schema<ICar>({
@@ -39,6 +39,7 @@ export const carSchema = new Schema<ICar>({
     },
     img: {
         type: String,
+        unique: true
     },
     price: {
         type: Number,

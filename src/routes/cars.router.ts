@@ -1,6 +1,10 @@
 import { Request, Response, Router } from "express";
 import CarsService from "../services/cars.service";
 import { authorizationMiddleware } from "../middlewares/authorization.middlewares";
+import { ICar } from "../models/car.model";
+import { bodyValidationCar } from "../utils/validations";
+import * as yup from "yup";
+
 
 const router = Router();
 
@@ -12,6 +16,26 @@ router.get("/", async (req: Request, res: Response) => {
 
 //Adiciona um veículo
 router.post("/", authorizationMiddleware, async (req: Request, res: Response) => {
+    
+    //Validação com yup ----------------------------
+    let validateData: ICar | undefined = undefined;
+
+    try {
+        validateData = await bodyValidationCar.validate(req.body, { abortEarly: false });
+    } catch(err) {
+        const yupError = err as yup.ValidationError;
+        const errors: Record<string, string> = {}
+
+        yupError.inner.forEach(error => {
+            if (error.path === undefined) return;
+            errors[error.path] = error.message;
+        });
+        
+        return res.status(400).json({ errors });
+    }
+
+//fim da validação ---------------------------
+    
     await CarsService.create(req.body);
     res.status(201).send({ message: "Veículo registrado com sucesso!" });
 });

@@ -19,6 +19,7 @@ class UserAdminService {
     }
 
     async create(userAdmin:  IUserAdmin) {
+
         if(userAdmin.password) {
             userAdmin.password = await bcrypt.hash(userAdmin.password, 10);
         }

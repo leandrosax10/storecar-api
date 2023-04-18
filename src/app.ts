@@ -1,5 +1,6 @@
 import  express  from "express";
 import cors from "cors";
+import "./utils/TranslationsYup";
 import routes from "./routes";
 import connection from "./config/database";
 
