@@ -3,6 +3,14 @@
 
  Este projeto é uma API Rest em NodeJs e Typescript desenvolvida para fins de aprendizado e portfólio.
  
+ ## Tecnologias utilizadas
+ 
+* [VS CODE ](#VS_CODE)
+* [Xml - Front-end](#Android_Studio)
+* [Java - Back-end](#Java)
+* [Gradle - Sistema de automação de compilação](#Android_Studio)
+* [GenyMotion - Emulador](#Geny)
+ 
  ## Inicialização:
  
  Para executar o projeto é necessário ter instalado o [Node.js(versão 18)](https://nodejs.org/en/download).
