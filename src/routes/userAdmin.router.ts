@@ -84,7 +84,7 @@ router.delete('/remove/:document', authorizationMiddleware, async (req: Request,
     } 
 });
 
-//Atualza um registro pelo document
+//Atualiza um registro pelo document
 router.put('/:document', authorizationMiddleware, async (req: Request, res: Response) => {
     const userAdmin = await userAdminService.getByDocument(req.params.document);
     if(!userAdmin && userAdmin !== null && userAdmin !== undefined) 
@@ -114,9 +114,6 @@ router.put('/:document', authorizationMiddleware, async (req: Request, res: Resp
 
 //fim da validação ---------------------------
 
-
-
-    
     try{
         await userAdminService.update(req.params.document, req.body);
         res.status(200).send({ message: 'Administrador atualizado com sucesso!' });
