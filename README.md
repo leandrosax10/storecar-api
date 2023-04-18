@@ -19,10 +19,12 @@
  
  `$ npm install`
  
- Configure as variáveis de ambiente, crie o arquivo .env na pasta raiz do projeto e coloque o conteúdo a seguir dentro:
+ Configure as variáveis de ambiente, crie o arquivo `.env` na pasta raiz do projeto e coloque o conteúdo a seguir dentro:
  
  `DATABASE_URL=mongodb://127.0.0.1:27017/carStoreDb`
+ 
  `PORT= 3000`
+ 
  `JWT_SECRET_KEY=[Uma string qualquer]`
  
  Rode o projeto
