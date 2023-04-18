@@ -5,11 +5,11 @@
  
  ## Tecnologias utilizadas
  
-* [VS CODE ](#VS_CODE)
-* [Xml - Front-end](#Android_Studio)
-* [Java - Back-end](#Java)
-* [Gradle - Sistema de automação de compilação](#Android_Studio)
-* [GenyMotion - Emulador](#Geny)
+* [VISUAL STUDIO CODE - IDE](#VS_CODE)
+* [Node](#Node)
+* [Typescript](#Typescript)
+* [Express](#express)
+* [Mongo DB](#MongoDB)
  
  ## Inicialização:
  
