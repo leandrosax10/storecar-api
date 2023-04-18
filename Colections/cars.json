@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "643de1917fd51af1a5708ab0"
+  },
+  "name": "Virage Coupe 6.0 V12 490cv",
+  "make": "ASTON MARTIN",
+  "exchange": "automático",
+  "color": "laranja",
+  "description": "vidros elétricos, limp. traseiro, ar-condicionado, volante com regulagem de altura, direção hidráulica, retrovisores elétricos, airbag",
+  "km": 0,
+  "img": "https://quatrorodas.abril.com.br/wp-content/uploads/2016/10/121018_vira_01.jpeg?quality=70&strip=info&w=940&resize=1200,800",
+  "price": 410,
+  "quantity": 3,
+  "year": 2022,
+  "sold": true,
+  "phonecontact": "212617-5689",
+  "createdAt": {
+    "$date": "2023-04-17T22:50:28.687Z"
+  },
+  "updateAt": {
+    "$date": "2023-04-17T22:50:28.687Z"
+  },
+  "__v": 0
+}]
