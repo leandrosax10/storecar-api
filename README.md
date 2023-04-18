@@ -10,6 +10,7 @@
 * [Node](#Node)
 * [Typescript](#Typescript)
 * [Express](#express)
+* [Cors](#cors)
 * [Mongo DB](#MongoDB)
 
 ## Bibliotecas utilizadas
