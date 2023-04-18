@@ -9,7 +9,7 @@
  
  Clone o repositório:
  
- $ git clone https://github.com/leandrosax10/storecar-api.git
+`$ git clone https://github.com/leandrosax10/storecar-api.git`
  
  Entre na pasta
  
