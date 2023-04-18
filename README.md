@@ -13,18 +13,18 @@
  
  Entre na pasta
  
- $ cd storecar-api
+ `$ cd storecar-api`
  
  Instale as dependências
  
- $ npm install
+ `$ npm install`
  
  Configure as variáveis de ambiente, crie o arquivo .env na pasta raiz do projeto e coloque o conteúdo a seguir dentro:
  
- DATABASE_URL=mongodb://127.0.0.1:27017/carStoreDb
- PORT= 3000
- JWT_SECRET_KEY=[Uma string qualquer]
+ `DATABASE_URL=mongodb://127.0.0.1:27017/carStoreDb`
+ `PORT= 3000`
+ `JWT_SECRET_KEY=[Uma string qualquer]`
  
  Rode o projeto
  
- $ npm run start-dev
+ `$ npm run start-dev`
