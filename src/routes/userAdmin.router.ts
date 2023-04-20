@@ -8,7 +8,7 @@ import * as yup from "yup";
 const router = Router();
 
 //Lista os dados dos administradores
-router.get('/', authorizationMiddleware ,async (req: Request, res: Response) => {
+router.get('/', authorizationMiddleware , async (req: Request, res: Response) => {
     const userAdmin = await userAdminService.getAll();
     res.send(userAdmin);
 });
@@ -121,5 +121,6 @@ router.put('/:document', authorizationMiddleware, async (req: Request, res: Resp
         res.status(400).send({ message: error.message });
     }
 });
+
 
 export default router;

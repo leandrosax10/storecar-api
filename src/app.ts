@@ -10,6 +10,10 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
+//link para documentação
+app.use(express.static("public"))
+
+
 const PORT = process.env.PORT || 3000;
 
 connection.then(() => {
