@@ -45,3 +45,8 @@
  Rode o projeto
  
  `$ npm run start-dev`
+ 
+  Para ter acesso a documentação da api:
+  
+  `Após rodar o projeto, digite esse caminho sem seu navegador http://localhost:3000/`
+  
