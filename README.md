@@ -48,5 +48,5 @@
  
   Para ter acesso a documentação da api:
   
-  `Após rodar o projeto, digite esse caminho sem seu navegador http://localhost:3000/`
+  `Após rodar o projeto, digite esse caminho em seu navegador http://localhost:3000/`
   
