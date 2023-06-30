@@ -14,8 +14,8 @@ router.get("/", async (req: Request, res: Response) => {
     res.send(cars);
 });
 
-//Adiciona um veículo
-router.post("/", authorizationMiddleware, async (req: Request, res: Response) => {
+//Adiciona um veículo, authorizationMiddleware
+router.post("/", async (req: Request, res: Response) => {
     
     //Validação com yup ----------------------------
     let validateData: ICar | undefined = undefined;
@@ -41,7 +41,7 @@ router.post("/", authorizationMiddleware, async (req: Request, res: Response) =>
 });
 
 //Deleta um veículo
-router.delete("/remove/:_id", authorizationMiddleware, async (req: Request, res: Response) => {
+router.delete("/remove/:_id",  async (req: Request, res: Response) => {
     const car = await CarsService.getById(req.params.id);
     if(!car && car !== null && car !== undefined) return res.status(400).send({ message: "Veículo não encontrado!"});
 
@@ -54,7 +54,7 @@ router.delete("/remove/:_id", authorizationMiddleware, async (req: Request, res:
 });
 
 //Altera um veículo
-router.put("/:_id", authorizationMiddleware, async (req: Request, res: Response) => {
+router.put("/:_id",  async (req: Request, res: Response) => {
     const car = await CarsService.getById(req.params.id);
     if(!car && car !== null && car !== undefined) return res.status(400).send({ message: "Veículo não encontrado!"});
 
